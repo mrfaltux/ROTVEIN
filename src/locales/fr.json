@@ -1,0 +1,134 @@
+{
+  "meta": { "name": "FRANÇAIS", "code": "FR" },
+
+  "ui": {
+    "level": "NIVEAU", "survived": "SURVÉCU", "kills": "VICTIMES", "locked": "VERROUILLÉ",
+    "back": "RETOUR", "pause": "PAUSE", "soundOn": "SON ACTIVÉ", "soundOff": "SON COUPÉ",
+    "combo": "{n}× ESSAIM", "rank": "RANG {n}"
+  },
+
+  "start": {
+    "sub": "SURVIE FACE À L'ESSAIM",
+    "play": "ENTRER SOUS LA CANOPÉE",
+    "bestiary": "BESTIAIRE",
+    "language": "LANGUE",
+    "best": "RECORD {time} · NIVEAU {level} · {kills} VICTIMES"
+  },
+
+  "controls": {
+    "move": "se déplacer & esquiver", "cast": "lancer le pouvoir choisi", "switch": "changer de pouvoir",
+    "dash": "ruée", "aim": "viser", "good": "à manger", "bad": "à ne jamais manger",
+    "pause": "mettre en pause",
+    "kMove": "WASD / FLÈCHES", "kCast": "ESPACE / CLIC", "kSwitch": "1 – 7",
+    "kDash": "MAJ / CLIC DROIT", "kAim": "SOURIS", "kGood": "FRUITS DORÉS", "kBad": "CHAMPIGNONS VIOLETS",
+    "kPause": "P / ÉCHAP",
+    "tHold": "MAINTENIR", "tHoldD": "n'importe où pour marcher",
+    "tTap": "TOUCHER UN POUVOIR", "tTapD": "lancer la capacité",
+    "tSecond": "2e DOIGT", "tSecondD": "ruée d'esquive",
+    "tAuto": "AUTO", "tAutoD": "tu attaques tout seul",
+    "hintTouch": "MAINTENIR POUR MARCHER · TOUCHER UN POUVOIR · DEUXIÈME DOIGT POUR ESQUIVER",
+    "hintDesk": "WASD DÉPLACEMENT · ESPACE OU CLIC LANCE · 1–7 CHANGE · MAJ ESQUIVE"
+  },
+
+  "levelup": { "title": "MUTATION", "sub": "ABSORBE UNE SOUCHE" },
+  "pause": { "title": "SOUFFLE RETENU", "resume": "REPRENDRE", "quit": "ABANDONNER" },
+  "bestiary": {
+    "title": "BESTIAIRE", "sub": "CHAQUE CRÉATURE CHASSE AUTREMENT",
+    "hp": "PV", "spd": "VITESSE", "dmg": "DÉGÂTS", "from": "DÈS {time}"
+  },
+  "gameover": { "title": "DÉVORÉ", "again": "REPOUSSER", "by": "TUÉ PAR {name}", "byNothing": "TUÉ PAR LA JUNGLE" },
+
+  "flash": {
+    "boss": "{name} S'ÉVEILLE",
+    "elite": "CARAPACES LOURDES EN APPROCHE",
+    "swarm": "L'ESSAIM S'ÉPAISSIT",
+    "heal": "+{n} SANTÉ",
+    "power": "SURCHARGE DE DÉGÂTS",
+    "swift": "SANG VIF",
+    "rage": "FRÉNÉSIE",
+    "bark": "PEAU D'ÉCORCE",
+    "absorbed": "POUVOIR ABSORBÉ — {name}",
+    "rotten": "POURRI — RALENTI",
+    "poisoned": "EMPOISONNÉ",
+    "weakened": "AFFAIBLI",
+    "chilled": "ENGOURDI",
+    "latched": "QUELQUE CHOSE TE VIDE",
+    "webbed": "PRIS DANS LA SOIE",
+    "charge": "IL CHARGE",
+    "erupt": "QUELQUE CHOSE BOUGE SOUS TES PIEDS",
+    "strike": "IL S'ENROULE POUR FRAPPER",
+    "bloom": "LA RUCHE ENFANTE",
+    "dive": "PIQUÉ IMMINENT"
+  },
+
+  "status": {
+    "power": "DÉGÂTS", "swift": "VIF", "rage": "FRÉNÉSIE", "bark": "ÉCORCE",
+    "rot": "POURRI", "venom": "POISON", "curse": "FAIBLE", "web": "ENTOILÉ",
+    "chill": "RAIDE", "wither": "FLÉTRI", "drain": "VIDÉ"
+  },
+
+  "tactics": {
+    "swarm": "ESSAIM", "latch": "PARASITE", "divebomb": "PIQUÉ", "bomber": "EXPLOSION SUICIDE",
+    "artillery": "ARTILLERIE", "webber": "PIÉGEUR", "polluter": "INTERDICTION DE ZONE", "duelist": "DUELLISTE",
+    "hopper": "SAUTEUR", "weaver": "RUÉE SERPENTINE", "charger": "CHARGEUR", "burrower": "EMBUSCADE",
+    "striker": "FRAPPEUR", "spawner": "PONDEUSE", "apex": "PRÉDATEUR SUPRÊME", "brood": "REINE DU NID"
+  },
+
+  "enemies": {
+    "crawler":  { "name": "BLATTE RAMPANTE", "desc": "Bon marché, sans fin, dangereuse seulement en nombre. Elle fonce droit sur toi et ne réfléchit plus jamais." },
+    "tick":     { "name": "TIQUE DE SANG",   "desc": "S'accroche à ton dos et te vide jusqu'à ce qu'une ruée l'arrache. Petite, rapide, exaspérante." },
+    "wasp":     { "name": "FRELON",          "desc": "Tourne juste hors de portée puis s'engage dans un piqué rectiligne. Esquive et il devra refaire un tour." },
+    "firefly":  { "name": "MOUCHE DE BRAISE","desc": "Vole vers toi en brillant de plus en plus fort, puis détone. Tue-la tôt ou quitte le rayon." },
+    "spitter":  { "name": "CRACHEUR D'ACIDE","desc": "Refuse d'approcher. Lobe de l'acide en cloche qui laisse une flaque brûlante." },
+    "spider":   { "name": "ARAIGNÉE DE SOIE","desc": "Tire une soie qui te réduit au pas et garde ses distances le temps que l'essaim arrive." },
+    "moth":     { "name": "PAPILLON À SPORES","desc": "Dérive au-dessus de toi en traînant des nuages de spores qui empoisonnent le sol dont tu avais besoin." },
+    "mantis":   { "name": "MANTE-LAME",      "desc": "Tourne à distance de lame, se dresse pour prévenir, puis fend avec ses deux faux." },
+    "toad":     { "name": "CRAPAUD TOXIQUE", "desc": "Bondit en longs arcs lisibles et éclabousse de toxine tout son point de chute." },
+    "centipede":{ "name": "MILLE-PATTES PUTRIDE", "desc": "Zigzague en chargeant pour que tes tirs partent dans le vide. Tout son corps blesse." },
+    "brute":    { "name": "SCARABÉE RHINOCÉROS", "desc": "Avance lourdement, prend appui, puis charge en ligne droite. Écarte-toi et il percute le vide." },
+    "scorpion": { "name": "SCORPION D'ÉCORCE","desc": "Disparaît sous terre où rien ne l'atteint, te piste, et jaillit sous tes pieds." },
+    "serpent":  { "name": "SERPENT-LIANE",   "desc": "S'enroule à distance puis franchit tout l'écart d'une seule frappe avant que tu puisses répondre." },
+    "sac":      { "name": "SAC À LARVES",    "desc": "Bouge à peine. Continue d'expirer des rampantes jusqu'à ce que tu le brûles — et en libère d'autres en mourant." },
+    "apex":     { "name": "ORGANISME APEX",  "desc": "Charge, appelle l'essaim, puis noie la clairière sous un feu de spores. Il change de tactique en mourant." },
+    "brood":    { "name": "MÈRE COUVEUSE",   "desc": "Ne t'affronte jamais. Elle tapisse le sol de soie, pond des sacs et laisse la jungle travailler." }
+  },
+
+  "abilities": {
+    "volley": { "name": "VOLÉE D'ÉPINES",  "desc": "Tire un large éventail d'épines perforantes." },
+    "nova":   { "name": "NOVA DE SPORES",  "desc": "Déclenche une onde de choc qui repousse l'essaim." },
+    "storm":  { "name": "APPEL D'ORAGE",   "desc": "La foudre traque les cibles proches et les étourdit." },
+    "wave":   { "name": "VAGUE DE BRAISE", "desc": "Roule un mur de feu qui brûle tout sur son passage." },
+    "snare":  { "name": "LIANE ÉTRANGLEUSE","desc": "Des racines jaillissent, immobilisent et broient l'essaim." },
+    "orbit":  { "name": "CERCLE D'ÉPINES", "desc": "Des lames tournent autour de toi et déchiquettent ce qui approche." },
+    "quake":  { "name": "SÉISME RACINAIRE","desc": "Frappe le sol : tout ce qui est proche titube et se fend." },
+    "rankUp": "Effet renforcé, temps de recharge réduit."
+  },
+
+  "cardKind": { "power": "NOUVEAU POUVOIR", "rank": "POUVOIR RANG {n}", "stat": "ADAPTATION" },
+  "upgrades": {
+    "dmg":     { "name": "ÉPINES AIGUISÉES", "desc": "+22% de dégâts d'attaque." },
+    "spd":     { "name": "CROISSANCE RAPIDE","desc": "+18% de vitesse d'attaque." },
+    "legs":    { "name": "RACINES AGILES",   "desc": "+10% de vitesse de déplacement." },
+    "hp":      { "name": "CUIR ÉPAIS",       "desc": "+28 points de vie max, et soigne d'autant." },
+    "split":   { "name": "GRAINE FENDUE",    "desc": "+1 projectile automatique." },
+    "pier":    { "name": "POINTES BARBELÉES","desc": "Les attaques transpercent 1 ennemi de plus." },
+    "rng":     { "name": "LONGUE VUE",       "desc": "+28% de portée d'attaque." },
+    "mag":     { "name": "RACINES AVIDES",   "desc": "+70% de rayon de ramassage." },
+    "reg":     { "name": "REPOUSSE",         "desc": "Régénère 1,4 point de vie par seconde." },
+    "crit":    { "name": "ŒIL DE PRÉDATEUR", "desc": "+9% de chance critique." },
+    "critdmg": { "name": "CARAPACE FENDUE",  "desc": "+45% de dégâts critiques." },
+    "cd":      { "name": "SANG FROID",       "desc": "-16% de temps de recharge." },
+    "dash":    { "name": "RÉFLEXE VIF",      "desc": "-28% de recharge d'esquive." },
+    "velo":    { "name": "TENDON TENDU",     "desc": "+30% de vitesse des projectiles." },
+    "leech":   { "name": "LIANE VAMPIRE",    "desc": "Récupère 4% des dégâts infligés." },
+    "armor":   { "name": "PEAU D'ÉCORCE",    "desc": "Tu subis 14% de dégâts en moins." },
+    "thorns":  { "name": "CARAPACE ÉPINEUSE","desc": "Les assaillants subissent 9 dégâts en retour." },
+    "greed":   { "name": "APPÉTIT PROFOND",  "desc": "+25% d'expérience sur tout." }
+  },
+
+  "pickups": {
+    "ability": "CRISTAL DE SPORES",
+    "sun": "FRUIT-SOLEIL", "power": "BAIE DE SANG", "swift": "NECTAR VIF", "rage": "FLEUR DE RAGE", "bark": "ÉCORCE DE FER",
+    "rot": "CHAMPIGNON POURRI", "venom": "COSSE DE VENIN", "curse": "FLEUR MAUDITE", "chill": "CHAPEAU DE GIVRE"
+  }
+}

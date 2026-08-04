@@ -1,0 +1,16 @@
+{
+  "name": "rotvein",
+  "version": "2.0.0",
+  "description": "ROTVEIN — a 3D open-world jungle swarm survivor that runs from a static folder.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "python3 tools/serve.py",
+    "serve": "python3 tools/serve.py",
+    "check": "npm run check:syntax && npm run check:locales",
+    "check:syntax": "node tools/check-syntax.mjs",
+    "check:locales": "node tools/check-locales.mjs"
+  },
+  "keywords": ["game", "threejs", "survivor", "webgl", "github-pages"],
+  "license": "MIT"
+}

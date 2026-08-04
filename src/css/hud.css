@@ -1,0 +1,72 @@
+/* ROTVEIN — in-run HUD: bars, dock, joystick, warnings */
+
+#top{top:0;left:0;right:0;padding:calc(10px + env(safe-area-inset-top)) 12px 0;
+  display:flex;flex-direction:column;gap:6px}
+.bar{position:relative;height:14px;border:1.5px solid rgba(232,245,228,.28);background:rgba(4,16,12,.55);overflow:hidden;
+  clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px)}
+.bar i{position:absolute;inset:0;transform-origin:left;transition:transform .12s linear;display:block}
+#hpf{background:linear-gradient(90deg,#FF3A6E,#FF7A4B)}
+#xpf{background:linear-gradient(90deg,var(--ice),var(--lime))}
+#xpbar{height:8px}
+.bar b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font:600 10px/1 var(--ui);letter-spacing:.14em;text-shadow:0 1px 2px #000}
+#statline{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--disp);letter-spacing:.06em}
+#lvl{font-size:26px;color:var(--lime);text-shadow:0 0 14px rgba(182,255,46,.5)}
+#clock{font-size:30px;font-variant-numeric:tabular-nums}
+#kills{font-size:20px;color:var(--amber)}
+.tag{font:600 9px/1 var(--ui);letter-spacing:.22em;opacity:.55;display:block}
+
+/* active buff / debuff pills */
+#status{display:flex;gap:5px;flex-wrap:wrap;margin-top:2px}
+.pill{font:700 8.5px var(--ui);letter-spacing:.14em;padding:3px 7px;border:1px solid currentColor;opacity:.9;
+  clip-path:polygon(4px 0,100% 0,100% calc(100% - 4px),calc(100% - 4px) 100%,0 100%,0 4px)}
+.pill.good{color:var(--lime)}
+.pill.bad{color:var(--rot)}
+.pill b{font-weight:700;opacity:.65;margin-left:5px}
+
+#combo{position:fixed;top:32%;left:50%;transform:translateX(-50%);z-index:5;pointer-events:none;
+  font-family:var(--disp);font-size:34px;color:var(--amber);opacity:0;text-shadow:0 0 18px rgba(255,176,32,.6)}
+#warn{position:fixed;top:22%;left:50%;transform:translateX(-50%);z-index:5;pointer-events:none;
+  font:700 13px/1 var(--ui);letter-spacing:.2em;color:var(--rot);opacity:0;transition:opacity .3s;white-space:nowrap;
+  text-shadow:0 0 14px rgba(192,75,255,.6)}
+/* telegraph banner — a creature is about to commit to its attack */
+#threat{position:fixed;top:28%;left:50%;transform:translateX(-50%);z-index:5;pointer-events:none;
+  font:700 11px/1 var(--ui);letter-spacing:.26em;color:var(--blood);opacity:0;transition:opacity .18s;white-space:nowrap}
+
+#bossw{position:fixed;top:calc(88px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);
+  width:min(420px,72vw);z-index:5;pointer-events:none;opacity:0;transition:opacity .3s}
+#bossw .bar{height:9px;border-color:rgba(255,58,110,.5)}
+#bossf{background:linear-gradient(90deg,#7A0D2A,var(--blood))}
+#bossn{font:700 10px/1.6 var(--ui);letter-spacing:.24em;text-align:center;color:var(--blood)}
+#bossp{font:600 8.5px var(--ui);letter-spacing:.2em;text-align:center;opacity:.55;margin-top:2px}
+
+/* ---------- ability dock ---------- */
+#dock{left:0;right:0;bottom:calc(14px + env(safe-area-inset-bottom));display:flex;gap:8px;
+  justify-content:center;flex-wrap:wrap;padding:0 8px;z-index:6}
+.slot{pointer-events:auto;width:58px;height:58px;position:relative;background:rgba(6,26,18,.72);
+  border:1.5px solid rgba(232,245,228,.22);border-radius:2px;display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:border-color .15s,transform .1s;overflow:hidden}
+.slot.on{border-color:var(--lime);box-shadow:0 0 0 1px rgba(182,255,46,.35),0 0 22px rgba(182,255,46,.2)}
+.slot.empty{opacity:.28;border-style:dashed}
+.slot.ready::after{content:'';position:absolute;inset:0;border:1px solid rgba(182,255,46,.5);animation:rdy 1.6s infinite}
+@keyframes rdy{0%,100%{opacity:0}50%{opacity:.7}}
+.slot:active{transform:scale(.94)}
+.slot .glyph{width:25px;height:25px;opacity:.95}
+.slot .cd{position:absolute;inset:0;background:rgba(2,10,7,.78);transform-origin:bottom}
+.slot .k{position:absolute;top:2px;left:4px;font:600 9px var(--ui);opacity:.5}
+.slot .nm{position:absolute;bottom:2px;left:0;right:0;text-align:center;font:600 7px var(--ui);letter-spacing:.08em;opacity:.7}
+.slot .lv{position:absolute;top:2px;right:4px;font:700 9px var(--ui);color:var(--amber)}
+
+#hint{bottom:calc(84px + env(safe-area-inset-bottom));left:0;right:0;text-align:center;
+  font:600 9.5px var(--ui);letter-spacing:.18em;opacity:.4}
+
+/* ---------- invisible joystick ---------- */
+#stick{position:fixed;z-index:4;width:112px;height:112px;margin:-56px 0 0 -56px;border-radius:50%;
+  border:1.5px solid rgba(232,245,228,.16);opacity:0;transition:opacity .15s;pointer-events:none}
+#stick div{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;
+  background:rgba(182,255,46,.16);border:1.5px solid rgba(182,255,46,.5)}
+
+@media (max-width:420px){
+  .slot{width:50px;height:50px}
+  #dock{gap:6px}
+}

@@ -1,0 +1,70 @@
+/* ROTVEIN — full-screen overlays: start, level-up, bestiary, pause, game over */
+
+.screen{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;flex-direction:column;
+  background:radial-gradient(ellipse at 50% 40%,rgba(11,36,26,.86),rgba(2,9,6,.96));backdrop-filter:blur(3px);
+  padding:20px;overflow-y:auto}
+.screen.show{display:flex}
+h1{font-family:var(--disp);font-size:clamp(52px,13vw,120px);line-height:.84;letter-spacing:.02em;color:var(--bone)}
+h1 #t2{color:var(--lime);text-shadow:0 0 30px rgba(182,255,46,.45)}
+.sub{font:600 10px var(--ui);letter-spacing:.42em;opacity:.6;margin:14px 0 22px;text-align:center}
+.row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{pointer-events:auto;font:700 13px var(--ui);letter-spacing:.2em;padding:14px 34px;color:var(--ink);background:var(--lime);
+  border:0;cursor:pointer;clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+  transition:transform .1s,filter .15s}
+.btn:hover{filter:brightness(1.12)}
+.btn:active{transform:translateY(2px)}
+.btn.ghost{background:transparent;color:var(--bone);border:1.5px solid rgba(232,245,228,.3)}
+.btn.ghost:hover{border-color:var(--lime);color:var(--lime)}
+
+.keys{margin-top:24px;display:grid;grid-template-columns:auto auto;gap:6px 18px;
+  font:600 10.5px var(--ui);opacity:.55;letter-spacing:.08em}
+.keys b{color:var(--lime);font-weight:700}
+
+/* ---------- language picker ---------- */
+#langpick{margin-top:26px;text-align:center}
+#langs{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:8px;max-width:360px}
+.lang{pointer-events:auto;cursor:pointer;font:700 10px var(--ui);letter-spacing:.16em;padding:7px 11px;
+  background:rgba(6,26,18,.7);border:1.5px solid rgba(232,245,228,.2);color:var(--bone);opacity:.65;
+  transition:border-color .15s,opacity .15s}
+.lang:hover{opacity:1}
+.lang.on{border-color:var(--lime);color:var(--lime);opacity:1}
+
+/* ---------- level-up cards ---------- */
+#cards{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;max-width:940px}
+.card{pointer-events:auto;width:min(240px,80vw);padding:20px 18px 22px;
+  background:linear-gradient(180deg,rgba(11,36,26,.95),rgba(4,16,12,.95));
+  border:1.5px solid rgba(232,245,228,.18);cursor:pointer;position:relative;transition:transform .12s,border-color .12s;
+  clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px)}
+.card:hover{transform:translateY(-6px);border-color:var(--lime)}
+.card .n{position:absolute;top:8px;right:11px;font:700 11px var(--ui);opacity:.35}
+.card .ic{width:40px;height:40px;margin-bottom:14px}
+.card h3{font-family:var(--disp);font-size:25px;line-height:1;letter-spacing:.02em;margin-bottom:8px}
+.card p{font:500 11.5px/1.5 var(--ui);opacity:.68}
+.card .kind{font:700 8.5px var(--ui);letter-spacing:.22em;margin-bottom:10px;color:var(--amber)}
+.card.new .kind{color:var(--lime)}
+.card.rank .kind{color:var(--ice)}
+#lvtitle{font-family:var(--disp);font-size:40px;letter-spacing:.03em;margin-bottom:4px;text-align:center}
+#lvsub{font:600 9.5px var(--ui);letter-spacing:.3em;opacity:.5;margin-bottom:28px;text-align:center}
+
+/* ---------- bestiary ---------- */
+#besttitle{font-family:var(--disp);font-size:clamp(34px,7vw,58px);letter-spacing:.03em}
+#bestsub{font:600 9.5px var(--ui);letter-spacing:.3em;opacity:.5;margin:4px 0 22px;text-align:center}
+#bestlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:10px;
+  width:min(1000px,94vw);margin-bottom:22px}
+.beast{background:rgba(6,26,18,.72);border:1.5px solid rgba(232,245,228,.14);padding:12px 13px;display:flex;gap:11px;
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+.beast svg{width:34px;height:34px;flex:0 0 34px;margin-top:2px}
+.beast h4{font-family:var(--disp);font-size:19px;line-height:1.05;letter-spacing:.02em}
+.beast .tac{font:700 7.5px var(--ui);letter-spacing:.2em;color:var(--amber);margin:3px 0 5px}
+.beast p{font:500 10.5px/1.45 var(--ui);opacity:.62}
+.beast .num{display:flex;gap:10px;margin-top:7px;font:600 8.5px var(--ui);letter-spacing:.1em;opacity:.45}
+.beast.boss{border-color:rgba(255,58,110,.45)}
+.beast.boss .tac{color:var(--blood)}
+
+/* ---------- results ---------- */
+#stats{display:flex;gap:30px;margin:24px 0 12px;flex-wrap:wrap;justify-content:center}
+#stats div{text-align:center}
+#stats i{display:block;font-family:var(--disp);font-size:44px;font-style:normal;color:var(--lime);line-height:1}
+#stats span{font:600 9px var(--ui);letter-spacing:.24em;opacity:.5}
+#gotitle{color:var(--blood)}
+#killedby{font:600 10px var(--ui);letter-spacing:.22em;opacity:.5;margin-bottom:26px;text-align:center}

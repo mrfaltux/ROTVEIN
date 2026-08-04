@@ -1,0 +1,134 @@
+{
+  "meta": { "name": "PORTUGUÊS", "code": "PT" },
+
+  "ui": {
+    "level": "NÍVEL", "survived": "SOBREVIVEU", "kills": "ABATES", "locked": "BLOQUEADO",
+    "back": "VOLTAR", "pause": "PAUSA", "soundOn": "SOM LIGADO", "soundOff": "SOM DESLIGADO",
+    "combo": "{n}× ENXAME", "rank": "PATENTE {n}"
+  },
+
+  "start": {
+    "sub": "SOBREVIVÊNCIA AO ENXAME",
+    "play": "ENTRAR NA COPA",
+    "bestiary": "BESTIÁRIO",
+    "language": "IDIOMA",
+    "best": "RECORDE {time} · NÍVEL {level} · {kills} ABATES"
+  },
+
+  "controls": {
+    "move": "mover e desviar", "cast": "lançar o poder escolhido", "switch": "trocar de poder",
+    "dash": "arranque", "aim": "mirar", "good": "coma isto", "bad": "nunca coma isto",
+    "pause": "pausar",
+    "kMove": "WASD / SETAS", "kCast": "ESPAÇO / CLIQUE", "kSwitch": "1 – 7",
+    "kDash": "SHIFT / BOTÃO DIREITO", "kAim": "RATO", "kGood": "FRUTOS DOURADOS", "kBad": "FUNGOS ROXOS",
+    "kPause": "P / ESC",
+    "tHold": "SEGURE", "tHoldD": "em qualquer sítio para andar",
+    "tTap": "TOQUE NUM PODER", "tTapD": "lançar habilidade",
+    "tSecond": "2.º DEDO", "tSecondD": "arranque de desvio",
+    "tAuto": "AUTO", "tAutoD": "atacas sozinho",
+    "hintTouch": "SEGURE PARA ANDAR · TOQUE NUM PODER · O SEGUNDO DEDO DESVIA",
+    "hintDesk": "WASD MOVE · ESPAÇO OU CLIQUE LANÇA · 1–7 TROCA · SHIFT DESVIA"
+  },
+
+  "levelup": { "title": "MUTAÇÃO", "sub": "ABSORVE UMA ESTIRPE" },
+  "pause": { "title": "RESPIRAÇÃO PRESA", "resume": "CONTINUAR", "quit": "DESISTIR" },
+  "bestiary": {
+    "title": "BESTIÁRIO", "sub": "CADA CRIATURA CAÇA DE FORMA DIFERENTE",
+    "hp": "PV", "spd": "VELOCIDADE", "dmg": "DANO", "from": "A PARTIR DE {time}"
+  },
+  "gameover": { "title": "DEVORADO", "again": "CRESCER DE NOVO", "by": "MORTO POR {name}", "byNothing": "MORTO PELA SELVA" },
+
+  "flash": {
+    "boss": "{name} DESPERTA",
+    "elite": "CARAPAÇAS PESADAS A CHEGAR",
+    "swarm": "O ENXAME ADENSA-SE",
+    "heal": "+{n} DE VIDA",
+    "power": "SURTO DE DANO",
+    "swift": "SANGUE RÁPIDO",
+    "rage": "FRENESI",
+    "bark": "PELE DE CASCA",
+    "absorbed": "PODER ABSORVIDO — {name}",
+    "rotten": "PODRE — LENTO",
+    "poisoned": "ENVENENADO",
+    "weakened": "ENFRAQUECIDO",
+    "chilled": "ENRIJECIDO",
+    "latched": "ALGO ESTÁ A DRENAR-TE",
+    "webbed": "PRESO NA SEDA",
+    "charge": "ESTÁ A INVESTIR",
+    "erupt": "ALGO SE MEXE DEBAIXO DE TI",
+    "strike": "ENROLA-SE PARA ATACAR",
+    "bloom": "O NINHO ESTÁ A PARIR",
+    "dive": "MERGULHO A CHEGAR"
+  },
+
+  "status": {
+    "power": "DANO", "swift": "RÁPIDO", "rage": "FRENESI", "bark": "CASCA",
+    "rot": "PODRE", "venom": "VENENO", "curse": "FRACO", "web": "TEIA",
+    "chill": "RÍGIDO", "wither": "MURCHO", "drain": "DRENADO"
+  },
+
+  "tactics": {
+    "swarm": "ENXAME", "latch": "PARASITA", "divebomb": "MERGULHO", "bomber": "EXPLOSÃO SUICIDA",
+    "artillery": "ARTILHARIA", "webber": "ARMADILHEIRO", "polluter": "NEGAÇÃO DE ÁREA", "duelist": "DUELISTA",
+    "hopper": "SALTADOR", "weaver": "INVESTIDA SERPENTEANTE", "charger": "INVESTIDOR", "burrower": "EMBOSCADOR",
+    "striker": "BOTE", "spawner": "CRIADOR", "apex": "PREDADOR DE TOPO", "brood": "RAINHA DO NINHO"
+  },
+
+  "enemies": {
+    "crawler":  { "name": "BARATA RASTEJANTE", "desc": "Barata, infinita e só perigosa em número. Anda a direito até ti e nunca mais pensa." },
+    "tick":     { "name": "CARRAÇA DE SANGUE", "desc": "Agarra-se às tuas costas e drena-te até a arrancares com um arranque. Pequena, rápida, irritante." },
+    "wasp":     { "name": "VESPÃO",            "desc": "Circula mesmo fora do alcance e depois compromete-se com um mergulho a direito. Desvia-te e terá de voltar a dar a volta." },
+    "firefly":  { "name": "MOSCA DE BRASA",    "desc": "Voa na tua direção brilhando cada vez mais e detona. Mata-a cedo ou sai do raio." },
+    "spitter":  { "name": "CUSPIDOR DE ÁCIDO", "desc": "Recusa aproximar-se. Lança ácido em arco que deixa uma poça a arder." },
+    "spider":   { "name": "ARANHA DE SEDA",    "desc": "Dispara seda que te reduz a passo de caracol e mantém a distância até o enxame chegar." },
+    "moth":     { "name": "TRAÇA DE ESPOROS",  "desc": "Paira acima de ti deixando nuvens de esporos que envenenam justamente o chão de que precisavas." },
+    "mantis":   { "name": "LOUVA-A-DEUS LÂMINA","desc": "Circula à distância de lâmina, ergue-se a avisar e depois investe com as duas foices." },
+    "toad":     { "name": "SAPO TÓXICO",       "desc": "Salta em arcos longos e legíveis e salpica toxina por todo o ponto de queda." },
+    "centipede":{ "name": "CENTOPEIA PÚTRIDA", "desc": "Serpenteia enquanto avança para os teus tiros irem parar à selva vazia. O corpo todo magoa." },
+    "brute":    { "name": "ESCARAVELHO-RINOCERONTE", "desc": "Avança pesado, firma as patas e investe em linha reta. Sai da frente e ele embate no nada." },
+    "scorpion": { "name": "ESCORPIÃO DE CASCA","desc": "Desaparece debaixo da terra onde nada lhe toca, segue-te e irrompe sob os teus pés." },
+    "serpent":  { "name": "SERPENTE-LIANA",    "desc": "Enrola-se à distância e atravessa todo o espaço num só bote antes de poderes responder." },
+    "sac":      { "name": "SACO DE LARVAS",    "desc": "Quase não se mexe. Continua a expirar rastejantes até o queimares — e rebenta em mais quando morre." },
+    "apex":     { "name": "ORGANISMO ÁPICE",   "desc": "Investe, chama o enxame e depois inunda a clareira com fogo de esporos. Muda de tática enquanto morre." },
+    "brood":    { "name": "MÃE DA NINHADA",    "desc": "Nunca luta de frente. Tece o chão, pare sacos e deixa a selva fazer o trabalho." }
+  },
+
+  "abilities": {
+    "volley": { "name": "SALVA DE ESPINHOS",  "desc": "Dispara um leque largo de espinhos perfurantes." },
+    "nova":   { "name": "NOVA DE ESPOROS",    "desc": "Detona uma onda de choque que atira o enxame para trás." },
+    "storm":  { "name": "CHAMADA DA TEMPESTADE","desc": "Relâmpagos caçam alvos próximos e atordoam-nos." },
+    "wave":   { "name": "ONDA DE BRASAS",     "desc": "Empurra uma parede de fogo que queima tudo o que toca." },
+    "snare":  { "name": "LIANA ESTRANGULADORA","desc": "Raízes irrompem do chão, prendem e esmagam o enxame." },
+    "orbit":  { "name": "ANEL DE ESPINHOS",   "desc": "Lâminas giram à tua volta e retalham tudo o que se aproxima." },
+    "quake":  { "name": "TREMOR DE RAÍZES",   "desc": "Bate no chão: tudo por perto cambaleia e racha." },
+    "rankUp": "Efeito mais forte, recarga mais curta."
+  },
+
+  "cardKind": { "power": "NOVO PODER", "rank": "PODER PATENTE {n}", "stat": "ADAPTAÇÃO" },
+  "upgrades": {
+    "dmg":     { "name": "ESPINHOS AFIADOS",   "desc": "+22% de dano de ataque." },
+    "spd":     { "name": "CRESCIMENTO RÁPIDO", "desc": "+18% de velocidade de ataque." },
+    "legs":    { "name": "RAÍZES LIGEIRAS",    "desc": "+10% de velocidade de movimento." },
+    "hp":      { "name": "PELE GROSSA",        "desc": "+28 de vida máxima, e cura o mesmo." },
+    "split":   { "name": "SEMENTE PARTIDA",    "desc": "+1 projétil automático." },
+    "pier":    { "name": "PONTAS FARPADAS",    "desc": "Os ataques perfuram mais 1 inimigo." },
+    "rng":     { "name": "VISTA LONGA",        "desc": "+28% de alcance de ataque." },
+    "mag":     { "name": "RAÍZES FAMINTAS",    "desc": "+70% de raio de recolha." },
+    "reg":     { "name": "REBENTO",            "desc": "Regenera 1,4 de vida por segundo." },
+    "crit":    { "name": "OLHO DE PREDADOR",   "desc": "+9% de hipótese crítica." },
+    "critdmg": { "name": "CARAPAÇA RACHADA",   "desc": "+45% de dano crítico." },
+    "cd":      { "name": "SANGUE FRIO",        "desc": "-16% de recarga de habilidades." },
+    "dash":    { "name": "REFLEXO SÚBITO",     "desc": "-28% de recarga do desvio." },
+    "velo":    { "name": "TENDÃO TENSO",       "desc": "+30% de velocidade dos projéteis." },
+    "leech":   { "name": "LIANA VAMPIRA",      "desc": "Cura 4% do dano que causas." },
+    "armor":   { "name": "PELE DE CASCA",      "desc": "Sofres menos 14% de dano." },
+    "thorns":  { "name": "CARAPAÇA ESPINHOSA", "desc": "Os atacantes sofrem 9 de dano de volta." },
+    "greed":   { "name": "APETITE PROFUNDO",   "desc": "+25% de experiência de tudo." }
+  },
+
+  "pickups": {
+    "ability": "CRISTAL DE ESPOROS",
+    "sun": "FRUTO SOLAR", "power": "BAGA DE SANGUE", "swift": "NÉCTAR RÁPIDO", "rage": "FLOR DE FÚRIA", "bark": "CASCA DE FERRO",
+    "rot": "FUNGO PODRE", "venom": "VAGEM DE VENENO", "curse": "FLOR AMALDIÇOADA", "chill": "CHAPÉU DE GEADA"
+  }
+}

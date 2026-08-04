@@ -1,0 +1,134 @@
+{
+  "meta": { "name": "NEDERLANDS", "code": "NL" },
+
+  "ui": {
+    "level": "NIVEAU", "survived": "OVERLEEFD", "kills": "KILLS", "locked": "OP SLOT",
+    "back": "TERUG", "pause": "PAUZE", "soundOn": "GELUID AAN", "soundOff": "GELUID UIT",
+    "combo": "{n}× ZWERM", "rank": "RANG {n}"
+  },
+
+  "start": {
+    "sub": "JUNGLE ZWERM OVERLEVING",
+    "play": "HET BLADERDAK IN",
+    "bestiary": "BEESTENBOEK",
+    "language": "TAAL",
+    "best": "BESTE {time} · NIVEAU {level} · {kills} KILLS"
+  },
+
+  "controls": {
+    "move": "bewegen & ontwijken", "cast": "geselecteerde kracht", "switch": "kracht wisselen",
+    "dash": "sprint", "aim": "richten", "good": "eet dit op", "bad": "nooit opeten",
+    "pause": "pauzeren",
+    "kMove": "WASD / PIJLEN", "kCast": "SPATIE / KLIK", "kSwitch": "1 – 7",
+    "kDash": "SHIFT / RECHTERMUIS", "kAim": "MUIS", "kGood": "GOUDEN VRUCHTEN", "kBad": "PAARSE ZWAM",
+    "kPause": "P / ESC",
+    "tHold": "HOUD VAST", "tHoldD": "overal om te lopen",
+    "tTap": "TIK KRACHT", "tTapD": "kracht gebruiken",
+    "tSecond": "2e VINGER", "tSecondD": "ontwijksprint",
+    "tAuto": "AUTO", "tAutoD": "je valt vanzelf aan",
+    "hintTouch": "HOUD VAST OM TE LOPEN · TIK EEN KRACHT · TWEEDE VINGER ONTWIJKT",
+    "hintDesk": "WASD LOPEN · SPATIE OF KLIK VOOR KRACHT · 1–7 WISSELEN · SHIFT ONTWIJKT"
+  },
+
+  "levelup": { "title": "MUTATIE", "sub": "NEEM ÉÉN STAM OP" },
+  "pause": { "title": "INGEHOUDEN ADEM", "resume": "VERDER", "quit": "OPGEVEN" },
+  "bestiary": {
+    "title": "BEESTENBOEK", "sub": "ELK BEEST JAAGT ANDERS",
+    "hp": "HP", "spd": "SNELHEID", "dmg": "SCHADE", "from": "VANAF {time}"
+  },
+  "gameover": { "title": "VERSLONDEN", "again": "GROEI OPNIEUW", "by": "GEDOOD DOOR {name}", "byNothing": "GEDOOD DOOR DE JUNGLE" },
+
+  "flash": {
+    "boss": "{name} ONTWAAKT",
+    "elite": "ZWARE SCHILDEN KOMEN ERAAN",
+    "swarm": "DE ZWERM WORDT DICHTER",
+    "heal": "+{n} LEVEN",
+    "power": "SCHADEGOLF",
+    "swift": "SNEL BLOED",
+    "rage": "RAZERNIJ",
+    "bark": "SCHORSHUID",
+    "absorbed": "KRACHT OPGENOMEN — {name}",
+    "rotten": "ROT — VERTRAAGD",
+    "poisoned": "VERGIFTIGD",
+    "weakened": "VERZWAKT",
+    "chilled": "VERSTIJFD",
+    "latched": "IETS ZUIGT JE LEEG",
+    "webbed": "VAST IN HET WEB",
+    "charge": "HET STORMT OP JE AF",
+    "erupt": "ER BEWEEGT IETS ONDER JE",
+    "strike": "HET SPANT ZICH OM TOE TE SLAAN",
+    "bloom": "HET NEST BAART",
+    "dive": "DUIKAANVAL"
+  },
+
+  "status": {
+    "power": "SCHADE", "swift": "SNEL", "rage": "RAZERNIJ", "bark": "SCHORS",
+    "rot": "ROT", "venom": "GIF", "curse": "ZWAK", "web": "WEB",
+    "chill": "STIJF", "wither": "VERDORD", "drain": "LEEGGEZOGEN"
+  },
+
+  "tactics": {
+    "swarm": "ZWERM", "latch": "PARASIET", "divebomb": "DUIKBOMMEN", "bomber": "ZELFMOORDKNAL",
+    "artillery": "ARTILLERIE", "webber": "VALLENZETTER", "polluter": "GEBIEDSVERGIFTIGER", "duelist": "DUELLIST",
+    "hopper": "SPRINGER", "weaver": "SLINGERENDE STORMLOOP", "charger": "STORMRAM", "burrower": "HINDERLAAG",
+    "striker": "UITVALLER", "spawner": "BROEDER", "apex": "TOPPREDATOR", "brood": "NESTKONINGIN"
+  },
+
+  "enemies": {
+    "crawler":  { "name": "KAKKERLAKKRUIPER", "desc": "Goedkoop, eindeloos, en alleen gevaarlijk in aantallen. Loopt recht op je af en denkt daarna nooit meer na." },
+    "tick":     { "name": "BLOEDTEEK",        "desc": "Klampt zich aan je rug vast en zuigt je leeg tot je hem eraf sprint. Klein, snel, irritant." },
+    "wasp":     { "name": "HOORNAAR",         "desc": "Cirkelt net buiten bereik en kiest dan voor één rechte duik. Stap opzij en hij moet opnieuw rondgaan." },
+    "firefly":  { "name": "SINTELVLIEG",      "desc": "Vliegt op je af terwijl hij feller en feller gloeit, en ontploft dan. Dood hem vroeg of verlaat de knalzone." },
+    "spitter":  { "name": "ZUURSPUWER",       "desc": "Komt nooit dichtbij. Lobt zuur in een boog dat een brandende plas achterlaat." },
+    "spider":   { "name": "ZIJDESPIN",        "desc": "Schiet zijde die je tot stilstand vertraagt en houdt afstand tot de zwerm arriveert." },
+    "moth":     { "name": "SPOREMOT",         "desc": "Zweeft boven je en laat sporenwolken achter die precies de grond vergiftigen die je nodig had." },
+    "mantis":   { "name": "KLINGBIDSPRINKHAAN", "desc": "Cirkelt op mesafstand, richt zich op als waarschuwing en valt dan uit met beide klingen." },
+    "toad":     { "name": "GIFPAD",           "desc": "Springt in lange, leesbare bogen en spat gif over alles waar hij landt." },
+    "centipede":{ "name": "ROTDUIZENDPOOT",   "desc": "Slingert heen en weer tijdens de aanval, zodat je schoten in de lege jungle belanden. Zijn hele lijf doet pijn." },
+    "brute":    { "name": "NEUSHOORNKEVER",   "desc": "Sjokt vooruit, zet zich schrap en stormt dan in een rechte lijn. Stap opzij en hij ramt het niets." },
+    "scorpion": { "name": "SCHORSSCHORPIOEN", "desc": "Verdwijnt onder de grond waar niets hem raakt, volgt je, en barst onder je voeten omhoog." },
+    "serpent":  { "name": "RANKENSLANG",      "desc": "Rolt zich op afstand op en overbrugt het hele gat in één uitval voordat je kunt antwoorden." },
+    "sac":      { "name": "LARVENZAK",        "desc": "Beweegt nauwelijks. Blijft kruipers uitademen tot je hem afbrandt — en barst bij zijn dood in nog meer uiteen." },
+    "apex":     { "name": "APEX-ORGANISME",   "desc": "Stormt, roept de zwerm, en overspoelt de open plek met sporenvuur. Het wisselt van tactiek terwijl het sterft." },
+    "brood":    { "name": "BROEDMOEDER",      "desc": "Vecht nooit zelf. Ze spint de grond dicht, baart zakken en laat de jungle het werk doen." }
+  },
+
+  "abilities": {
+    "volley": { "name": "DOORNENSALVO",   "desc": "Vuurt een brede waaier doorborende doornen af." },
+    "nova":   { "name": "SPORENNOVA",     "desc": "Ontketent een schokgolf die de zwerm terugslaat." },
+    "storm":  { "name": "STORMROEP",      "desc": "Bliksem zoekt doelen in de buurt en verlamt ze." },
+    "wave":   { "name": "SINTELGOLF",     "desc": "Rolt een vuurmuur die alles verbrandt wat hij raakt." },
+    "snare":  { "name": "WURGRANK",       "desc": "Wortels breken los en houden de zwerm vast en verpletteren hem." },
+    "orbit":  { "name": "DOORNENRING",    "desc": "Klingen cirkelen even om je heen en versnipperen alles dat te dichtbij komt." },
+    "quake":  { "name": "WORTELBEVING",   "desc": "Ramt de grond: alles in de buurt wankelt en barst open." },
+    "rankUp": "Sterker effect, kortere afkoeltijd."
+  },
+
+  "cardKind": { "power": "NIEUWE KRACHT", "rank": "KRACHT RANG {n}", "stat": "AANPASSING" },
+  "upgrades": {
+    "dmg":     { "name": "GESLEPEN DOORNEN", "desc": "+22% aanvalsschade." },
+    "spd":     { "name": "SNELLE GROEI",     "desc": "+18% aanvalssnelheid." },
+    "legs":    { "name": "VLUGGE WORTELS",   "desc": "+10% loopsnelheid." },
+    "hp":      { "name": "DIKKE HUID",       "desc": "+28 maximaal leven, en geneest evenveel." },
+    "split":   { "name": "SPLIJTZAAD",       "desc": "+1 automatisch projectiel." },
+    "pier":    { "name": "WEERHAKEN",        "desc": "Aanvallen doorboren 1 vijand extra." },
+    "rng":     { "name": "VER ZICHT",        "desc": "+28% aanvalsbereik." },
+    "mag":     { "name": "HONGERIGE WORTELS","desc": "+70% oppakbereik." },
+    "reg":     { "name": "HERGROEI",         "desc": "Herstelt 1,4 leven per seconde." },
+    "crit":    { "name": "ROOFDIEROOG",      "desc": "+9% kritieke kans." },
+    "critdmg": { "name": "GESPLETEN SCHILD", "desc": "+45% kritieke schade." },
+    "cd":      { "name": "KOUD BLOED",       "desc": "-16% afkoeltijd van krachten." },
+    "dash":    { "name": "SNELLE REFLEX",    "desc": "-28% afkoeltijd van ontwijken." },
+    "velo":    { "name": "GESPANNEN PEES",   "desc": "+30% projectielsnelheid." },
+    "leech":   { "name": "VAMPIERRANK",      "desc": "Herstelt 4% van de schade die je doet." },
+    "armor":   { "name": "SCHORSHUID",       "desc": "Je krijgt 14% minder schade." },
+    "thorns":  { "name": "STEKELSCHILD",     "desc": "Aanvallers krijgen 9 schade terug." },
+    "greed":   { "name": "DIEPE HONGER",     "desc": "+25% ervaring uit alles." }
+  },
+
+  "pickups": {
+    "ability": "SPORENKRISTAL",
+    "sun": "ZONVRUCHT", "power": "BLOEDBES", "swift": "SNELLE NECTAR", "rage": "RAZERNIJBLOEM", "bark": "IJZERSCHORS",
+    "rot": "ROTZWAM", "venom": "GIFPEUL", "curse": "VERVLOEKTE BLOEM", "chill": "VORSTHOED"
+  }
+}

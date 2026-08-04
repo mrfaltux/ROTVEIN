@@ -1,0 +1,32 @@
+/* ROTVEIN — palette, reset, canvas layers */
+:root{
+  --ink:#04100C;
+  --moss:#0B241A;
+  --lime:#B6FF2E;
+  --amber:#FFB020;
+  --rot:#C04BFF;
+  --blood:#FF3A6E;
+  --ice:#2EE6FF;
+  --bone:#E8F5E4;
+  --ui:'Chakra Petch',system-ui,sans-serif;
+  --disp:'Barlow Condensed','Chakra Petch',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;background:var(--ink);font-family:var(--ui);color:var(--bone);
+  overscroll-behavior:none;touch-action:none}
+canvas{display:block;position:fixed;inset:0}
+
+#vig{position:fixed;inset:0;pointer-events:none;z-index:2;
+  background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 45%,rgba(2,12,8,.75) 100%)}
+#hurt{position:fixed;inset:0;pointer-events:none;z-index:3;
+  background:radial-gradient(ellipse at 50% 50%,rgba(255,58,110,0) 55%,rgba(255,58,110,.55) 100%);
+  opacity:0;transition:opacity .18s}
+.ui{position:fixed;z-index:5;pointer-events:none}
+
+/* shared clipped-corner plate used by bars, buttons and cards */
+.clip{clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px)}
+
+.mini{pointer-events:auto;background:none;border:0;color:var(--bone);opacity:.4;cursor:pointer;
+  font:600 10px var(--ui);letter-spacing:.1em;padding:6px}
+.mini:hover{opacity:.8}
+#topright{position:fixed;top:calc(8px + env(safe-area-inset-top));right:8px;z-index:7;display:flex;gap:2px}

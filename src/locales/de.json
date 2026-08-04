@@ -1,0 +1,134 @@
+{
+  "meta": { "name": "DEUTSCH", "code": "DE" },
+
+  "ui": {
+    "level": "STUFE", "survived": "ÜBERLEBT", "kills": "ABSCHÜSSE", "locked": "GESPERRT",
+    "back": "ZURÜCK", "pause": "PAUSE", "soundOn": "TON AN", "soundOff": "TON AUS",
+    "combo": "{n}× SCHWARM", "rank": "RANG {n}"
+  },
+
+  "start": {
+    "sub": "DSCHUNGEL-SCHWARM-ÜBERLEBEN",
+    "play": "INS BLÄTTERDACH",
+    "bestiary": "BESTIARIUM",
+    "language": "SPRACHE",
+    "best": "BESTE {time} · STUFE {level} · {kills} ABSCHÜSSE"
+  },
+
+  "controls": {
+    "move": "bewegen & ausweichen", "cast": "gewählte Kraft wirken", "switch": "Kraft wechseln",
+    "dash": "Hechten", "aim": "zielen", "good": "iss das", "bad": "niemals essen",
+    "pause": "pausieren",
+    "kMove": "WASD / PFEILE", "kCast": "LEERTASTE / KLICK", "kSwitch": "1 – 7",
+    "kDash": "SHIFT / RECHTSKLICK", "kAim": "MAUS", "kGood": "GOLDENE FRÜCHTE", "kBad": "LILA PILZE",
+    "kPause": "P / ESC",
+    "tHold": "HALTEN", "tHoldD": "irgendwo zum Laufen",
+    "tTap": "KRAFT TIPPEN", "tTapD": "Fähigkeit wirken",
+    "tSecond": "2. FINGER", "tSecondD": "Ausweichhechten",
+    "tAuto": "AUTO", "tAutoD": "du greifst von selbst an",
+    "hintTouch": "HALTEN ZUM LAUFEN · KRAFT ANTIPPEN · ZWEITER FINGER WEICHT AUS",
+    "hintDesk": "WASD LAUFEN · LEERTASTE ODER KLICK WIRKT · 1–7 WECHSELN · SHIFT WEICHT AUS"
+  },
+
+  "levelup": { "title": "MUTATION", "sub": "NIMM EINEN STAMM AUF" },
+  "pause": { "title": "ANGEHALTENER ATEM", "resume": "WEITER", "quit": "AUFGEBEN" },
+  "bestiary": {
+    "title": "BESTIARIUM", "sub": "JEDE KREATUR JAGT ANDERS",
+    "hp": "LP", "spd": "TEMPO", "dmg": "SCHADEN", "from": "AB {time}"
+  },
+  "gameover": { "title": "VERSCHLUNGEN", "again": "NEU WACHSEN", "by": "GETÖTET VON {name}", "byNothing": "VOM DSCHUNGEL GETÖTET" },
+
+  "flash": {
+    "boss": "{name} ERWACHT",
+    "elite": "SCHWERE PANZER IM ANMARSCH",
+    "swarm": "DER SCHWARM VERDICHTET SICH",
+    "heal": "+{n} LEBEN",
+    "power": "SCHADENSSCHUB",
+    "swift": "SCHNELLES BLUT",
+    "rage": "RASEREI",
+    "bark": "RINDENHAUT",
+    "absorbed": "KRAFT AUFGENOMMEN — {name}",
+    "rotten": "VERFAULT — VERLANGSAMT",
+    "poisoned": "VERGIFTET",
+    "weakened": "GESCHWÄCHT",
+    "chilled": "ERSTARRT",
+    "latched": "ETWAS SAUGT DICH AUS",
+    "webbed": "IN SEIDE GEFANGEN",
+    "charge": "ES STÜRMT LOS",
+    "erupt": "ETWAS BEWEGT SICH UNTER DIR",
+    "strike": "ES RINGELT SICH ZUM ZUSTOSSEN",
+    "bloom": "DER BAU GEBIERT",
+    "dive": "STURZFLUG IM ANFLUG"
+  },
+
+  "status": {
+    "power": "SCHADEN", "swift": "FLINK", "rage": "RASEREI", "bark": "RINDE",
+    "rot": "FÄULNIS", "venom": "GIFT", "curse": "SCHWACH", "web": "NETZ",
+    "chill": "STARR", "wither": "WELK", "drain": "AUSGESAUGT"
+  },
+
+  "tactics": {
+    "swarm": "SCHWARM", "latch": "PARASIT", "divebomb": "STURZFLUG", "bomber": "SELBSTZERSTÖRUNG",
+    "artillery": "ARTILLERIE", "webber": "FALLENSTELLER", "polluter": "GEBIETSSPERRE", "duelist": "DUELLANT",
+    "hopper": "SPRINGER", "weaver": "SCHLÄNGELNDER ANSTURM", "charger": "RAMMBOCK", "burrower": "HINTERHALT",
+    "striker": "AUSFALL", "spawner": "BRÜTER", "apex": "SPITZENJÄGER", "brood": "BRUTKÖNIGIN"
+  },
+
+  "enemies": {
+    "crawler":  { "name": "SCHABENKRIECHER", "desc": "Billig, endlos und nur in Massen gefährlich. Läuft geradeaus auf dich zu und denkt danach nie wieder nach." },
+    "tick":     { "name": "BLUTZECKE",       "desc": "Klammert sich an deinen Rücken und saugt dich aus, bis du sie abhechtest. Klein, schnell, zermürbend." },
+    "wasp":     { "name": "HORNISSE",        "desc": "Kreist knapp außer Reichweite und legt sich dann auf einen geraden Sturzflug fest. Weich aus, und sie muss neu ansetzen." },
+    "firefly":  { "name": "GLUTFLIEGE",      "desc": "Fliegt heller und heller glühend auf dich zu und detoniert. Töte sie früh oder verlasse den Radius." },
+    "spitter":  { "name": "SÄURESPEIER",     "desc": "Kommt nie näher. Schleudert Säure im Bogen, die eine brennende Pfütze hinterlässt." },
+    "spider":   { "name": "SEIDENSPINNE",    "desc": "Schießt Seide, die dich zum Kriechen bremst, und hält Abstand, bis der Schwarm eintrifft." },
+    "moth":     { "name": "SPORENFALTER",    "desc": "Treibt über dir und zieht Sporenwolken, die genau den Boden vergiften, den du brauchtest." },
+    "mantis":   { "name": "KLINGENMANTIS",   "desc": "Umkreist dich auf Messerdistanz, richtet sich als Warnung auf und stößt dann mit beiden Klingen zu." },
+    "toad":     { "name": "GIFTKRÖTE",       "desc": "Hüpft in langen, lesbaren Bögen und verspritzt Gift über alles, wo sie landet." },
+    "centipede":{ "name": "FÄULNISHUNDERTFÜSSER", "desc": "Schlängelt im Ansturm hin und her, sodass deine Schüsse ins Leere führen. Der ganze Körper verletzt." },
+    "brute":    { "name": "NASHORNKÄFER",    "desc": "Stapft heran, stemmt sich fest und stürmt dann geradeaus. Tritt zur Seite, und er rammt ins Nichts." },
+    "scorpion": { "name": "RINDENSKORPION",  "desc": "Verschwindet im Boden, wo ihn nichts trifft, verfolgt dich und bricht unter deinen Füßen hervor." },
+    "serpent":  { "name": "RANKENNATTER",    "desc": "Ringelt sich auf Distanz und überbrückt die ganze Lücke in einem Stoß, bevor du antworten kannst." },
+    "sac":      { "name": "LARVENSACK",      "desc": "Bewegt sich kaum. Atmet ständig Kriecher aus, bis du ihn niederbrennst — und platzt im Tod in weitere." },
+    "apex":     { "name": "APEX-ORGANISMUS", "desc": "Stürmt, ruft den Schwarm und flutet die Lichtung mit Sporenfeuer. Es wechselt die Taktik, während es stirbt." },
+    "brood":    { "name": "BRUTMUTTER",      "desc": "Kämpft nie selbst. Sie spinnt den Boden zu, gebiert Säcke und lässt den Dschungel arbeiten." }
+  },
+
+  "abilities": {
+    "volley": { "name": "DORNENSALVE",     "desc": "Feuert einen breiten Fächer durchschlagender Dornen." },
+    "nova":   { "name": "SPORENNOVA",      "desc": "Zündet eine Schockwelle, die den Schwarm zurückwirft." },
+    "storm":  { "name": "STURMRUF",        "desc": "Blitze suchen nahe Ziele und betäuben sie." },
+    "wave":   { "name": "GLUTWELLE",       "desc": "Rollt eine Feuerwand, die alles verbrennt, was sie berührt." },
+    "snare":  { "name": "WÜRGERANKE",      "desc": "Wurzeln brechen hervor, halten den Schwarm fest und zermalmen ihn." },
+    "orbit":  { "name": "DORNENRING",      "desc": "Klingen kreisen eine Weile um dich und zerfetzen alles, was herankommt." },
+    "quake":  { "name": "WURZELBEBEN",     "desc": "Schlägt in den Boden: alles in der Nähe taumelt und bricht auf." },
+    "rankUp": "Stärkere Wirkung, kürzere Abklingzeit."
+  },
+
+  "cardKind": { "power": "NEUE KRAFT", "rank": "KRAFT RANG {n}", "stat": "ANPASSUNG" },
+  "upgrades": {
+    "dmg":     { "name": "GESCHÄRFTE DORNEN", "desc": "+22% Angriffsschaden." },
+    "spd":     { "name": "SCHNELLES WACHSTUM","desc": "+18% Angriffstempo." },
+    "legs":    { "name": "FLINKE WURZELN",    "desc": "+10% Lauftempo." },
+    "hp":      { "name": "DICKE HAUT",        "desc": "+28 maximales Leben und heilt ebenso viel." },
+    "split":   { "name": "SPALTSAAT",         "desc": "+1 automatisches Geschoss." },
+    "pier":    { "name": "WIDERHAKEN",        "desc": "Angriffe durchschlagen 1 Feind mehr." },
+    "rng":     { "name": "WEITBLICK",         "desc": "+28% Angriffsreichweite." },
+    "mag":     { "name": "HUNGRIGE WURZELN",  "desc": "+70% Aufsammelradius." },
+    "reg":     { "name": "NACHWUCHS",         "desc": "Regeneriert 1,4 Leben pro Sekunde." },
+    "crit":    { "name": "RAUBTIERAUGE",      "desc": "+9% kritische Chance." },
+    "critdmg": { "name": "GESPALTENER PANZER","desc": "+45% kritischer Schaden." },
+    "cd":      { "name": "KALTES BLUT",       "desc": "-16% Abklingzeiten." },
+    "dash":    { "name": "SCHNELLREFLEX",     "desc": "-28% Hecht-Abklingzeit." },
+    "velo":    { "name": "GESPANNTE SEHNE",   "desc": "+30% Geschosstempo." },
+    "leech":   { "name": "VAMPIRRANKE",       "desc": "Heilt 4% des verursachten Schadens." },
+    "armor":   { "name": "RINDENHAUT",        "desc": "Du nimmst 14% weniger Schaden." },
+    "thorns":  { "name": "STACHELPANZER",     "desc": "Angreifer erleiden 9 Schaden zurück." },
+    "greed":   { "name": "TIEFER HUNGER",     "desc": "+25% Erfahrung aus allem." }
+  },
+
+  "pickups": {
+    "ability": "SPORENKRISTALL",
+    "sun": "SONNENFRUCHT", "power": "BLUTBEERE", "swift": "FLINKER NEKTAR", "rage": "RASEREIBLÜTE", "bark": "EISENRINDE",
+    "rot": "FÄULNISPILZ", "venom": "GIFTSCHOTE", "curse": "VERFLUCHTE BLÜTE", "chill": "FROSTKAPPE"
+  }
+}
